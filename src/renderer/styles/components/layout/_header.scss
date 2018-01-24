@@ -1,0 +1,45 @@
+.title-bar {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.3rem;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+
+  &__icon {
+    padding-left: 0.5rem;
+  }
+
+  &__route {
+    font-size: 0.9rem;
+  }
+
+  .windowControl {
+    display: flex;
+
+    button {
+      position: relative;
+      width: 47px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: rgba(255, 255, 255, 0.75);
+
+      -webkit-app-region: no-drag;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+
+        &:last-of-type {
+          background-color: #e81123;
+        }
+      }
+    }
+  }
+}
